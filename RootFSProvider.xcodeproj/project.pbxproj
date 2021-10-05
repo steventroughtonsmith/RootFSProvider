@@ -1,0 +1,1093 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00544C323760EF00095EBEB /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EEBA4E1F08EA460038A3B8 /* QuickLook.framework */; };
+		B00544C723760EF00095EBEB /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00544C623760EF00095EBEB /* PreviewViewController.m */; };
+		B00544CA23760EF00095EBEB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00544C823760EF00095EBEB /* MainInterface.storyboard */; };
+		B00544CE23760EF00095EBEB /* NeuePreviewExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B00544C223760EF00095EBEB /* NeuePreviewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B0203BB823760861008B7218 /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0203BB723760861008B7218 /* QuickLookThumbnailing.framework */; };
+		B0203BBC23760861008B7218 /* ThumbnailProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B0203BBB23760861008B7218 /* ThumbnailProvider.m */; };
+		B0203BC023760861008B7218 /* RootFSThumbnailExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0203BB623760861008B7218 /* RootFSThumbnailExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B0C102A31EF7465600FC04FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C102A21EF7465600FC04FB /* AppDelegate.m */; };
+		B0C102A61EF7465600FC04FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C102A51EF7465600FC04FB /* ViewController.m */; };
+		B0C102A91EF7465600FC04FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C102A71EF7465600FC04FB /* Main.storyboard */; };
+		B0C102AB1EF7465600FC04FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C102AA1EF7465600FC04FB /* Assets.xcassets */; };
+		B0C102AE1EF7465600FC04FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C102AC1EF7465600FC04FB /* LaunchScreen.storyboard */; };
+		B0C102B11EF7465600FC04FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C102B01EF7465600FC04FB /* main.m */; };
+		B0C102BF1EF7467300FC04FB /* FileProviderExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C102BE1EF7467300FC04FB /* FileProviderExtension.m */; };
+		B0C102C21EF7467300FC04FB /* FileProviderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C102C11EF7467300FC04FB /* FileProviderItem.m */; };
+		B0C102C51EF7467300FC04FB /* FileProviderEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C102C41EF7467300FC04FB /* FileProviderEnumerator.m */; };
+		B0C102CA1EF7467300FC04FB /* RootFSProviderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0C102BB1EF7467300FC04FB /* RootFSProviderExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B0E6D1AF1F07BFE5001C7099 /* FileProviderExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E6D1AE1F07BFE5001C7099 /* FileProviderExtension.m */; };
+		B0E6D1BA1F07BFE5001C7099 /* RootFSProviderUIExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0E6D1AB1F07BFE5001C7099 /* RootFSProviderUIExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B0E7CDC51F07C4A3002041C4 /* RootFSUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E7CDC41F07C4A3002041C4 /* RootFSUI.storyboard */; };
+		B0EEBA4F1F08EA460038A3B8 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EEBA4E1F08EA460038A3B8 /* QuickLook.framework */; };
+		B0EEBA531F08EA460038A3B8 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EEBA521F08EA460038A3B8 /* PreviewViewController.m */; };
+		B0EEBA561F08EA460038A3B8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EEBA541F08EA460038A3B8 /* MainInterface.storyboard */; };
+		B0EEBA5A1F08EA460038A3B8 /* RootFSPreviewExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0EEBA4C1F08EA460038A3B8 /* RootFSPreviewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B00544CC23760EF00095EBEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0C102961EF7465600FC04FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B00544C123760EF00095EBEB;
+			remoteInfo = NeuePreviewExtension;
+		};
+		B0203BBE23760861008B7218 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0C102961EF7465600FC04FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0203BB523760861008B7218;
+			remoteInfo = RootFSThumbnailExtension;
+		};
+		B0C102C81EF7467300FC04FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0C102961EF7465600FC04FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0C102BA1EF7467300FC04FB;
+			remoteInfo = RootFSProviderExtension;
+		};
+		B0E6D1B81F07BFE5001C7099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0C102961EF7465600FC04FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0E6D1AA1F07BFE5001C7099;
+			remoteInfo = RootFSProviderUIExtension;
+		};
+		B0EEBA581F08EA460038A3B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0C102961EF7465600FC04FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0EEBA4B1F08EA460038A3B8;
+			remoteInfo = RootFSPreviewExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0C102CE1EF7467300FC04FB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B0203BC023760861008B7218 /* RootFSThumbnailExtension.appex in Embed App Extensions */,
+				B0E6D1BA1F07BFE5001C7099 /* RootFSProviderUIExtension.appex in Embed App Extensions */,
+				B0C102CA1EF7467300FC04FB /* RootFSProviderExtension.appex in Embed App Extensions */,
+				B00544CE23760EF00095EBEB /* NeuePreviewExtension.appex in Embed App Extensions */,
+				B0EEBA5A1F08EA460038A3B8 /* RootFSPreviewExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B00544C223760EF00095EBEB /* NeuePreviewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NeuePreviewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00544C523760EF00095EBEB /* PreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		B00544C623760EF00095EBEB /* PreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		B00544C923760EF00095EBEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B00544CB23760EF00095EBEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00544D223760F260095EBEB /* NeuePreviewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NeuePreviewExtension.entitlements; sourceTree = "<group>"; };
+		B0203BB123760562008B7218 /* RootFSPreviewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RootFSPreviewExtension.entitlements; sourceTree = "<group>"; };
+		B0203BB623760861008B7218 /* RootFSThumbnailExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RootFSThumbnailExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0203BB723760861008B7218 /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
+		B0203BBA23760861008B7218 /* ThumbnailProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailProvider.h; sourceTree = "<group>"; };
+		B0203BBB23760861008B7218 /* ThumbnailProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailProvider.m; sourceTree = "<group>"; };
+		B0203BBD23760861008B7218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0203BC423760887008B7218 /* RootFSThumbnailExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RootFSThumbnailExtension.entitlements; sourceTree = "<group>"; };
+		B0C03A54270CEE58002107B3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0C1029E1EF7465600FC04FB /* RootFSProvider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RootFSProvider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C102A11EF7465600FC04FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B0C102A21EF7465600FC04FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B0C102A41EF7465600FC04FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B0C102A51EF7465600FC04FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B0C102A81EF7465600FC04FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0C102AA1EF7465600FC04FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0C102AD1EF7465600FC04FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0C102AF1EF7465600FC04FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0C102B01EF7465600FC04FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0C102BB1EF7467300FC04FB /* RootFSProviderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RootFSProviderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C102BD1EF7467300FC04FB /* FileProviderExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileProviderExtension.h; sourceTree = "<group>"; };
+		B0C102BE1EF7467300FC04FB /* FileProviderExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileProviderExtension.m; sourceTree = "<group>"; };
+		B0C102C01EF7467300FC04FB /* FileProviderItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileProviderItem.h; sourceTree = "<group>"; };
+		B0C102C11EF7467300FC04FB /* FileProviderItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileProviderItem.m; sourceTree = "<group>"; };
+		B0C102C31EF7467300FC04FB /* FileProviderEnumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileProviderEnumerator.h; sourceTree = "<group>"; };
+		B0C102C41EF7467300FC04FB /* FileProviderEnumerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileProviderEnumerator.m; sourceTree = "<group>"; };
+		B0C102C61EF7467300FC04FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0C102C71EF7467300FC04FB /* RootFSProviderExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RootFSProviderExtension.entitlements; sourceTree = "<group>"; };
+		B0CCE9B51EF74BF8009824EA /* RootFSProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RootFSProvider.entitlements; sourceTree = "<group>"; };
+		B0E6D1AB1F07BFE5001C7099 /* RootFSProviderUIExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RootFSProviderUIExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E6D1AD1F07BFE5001C7099 /* FileProviderExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileProviderExtension.h; sourceTree = "<group>"; };
+		B0E6D1AE1F07BFE5001C7099 /* FileProviderExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileProviderExtension.m; sourceTree = "<group>"; };
+		B0E6D1B61F07BFE5001C7099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0E6D1B71F07BFE5001C7099 /* RootFSProviderUIExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RootFSProviderUIExtension.entitlements; sourceTree = "<group>"; };
+		B0E7CDC41F07C4A3002041C4 /* RootFSUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootFSUI.storyboard; sourceTree = "<group>"; };
+		B0EEBA4C1F08EA460038A3B8 /* RootFSPreviewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RootFSPreviewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0EEBA4E1F08EA460038A3B8 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		B0EEBA511F08EA460038A3B8 /* PreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		B0EEBA521F08EA460038A3B8 /* PreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		B0EEBA551F08EA460038A3B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B0EEBA571F08EA460038A3B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B00544BF23760EF00095EBEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00544C323760EF00095EBEB /* QuickLook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0203BB323760861008B7218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0203BB823760861008B7218 /* QuickLookThumbnailing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C1029B1EF7465600FC04FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C102B81EF7467300FC04FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E6D1A81F07BFE5001C7099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0EEBA491F08EA460038A3B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0EEBA4F1F08EA460038A3B8 /* QuickLook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B00544C423760EF00095EBEB /* NeuePreviewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B00544D223760F260095EBEB /* NeuePreviewExtension.entitlements */,
+				B00544C523760EF00095EBEB /* PreviewViewController.h */,
+				B00544C623760EF00095EBEB /* PreviewViewController.m */,
+				B00544C823760EF00095EBEB /* MainInterface.storyboard */,
+				B00544CB23760EF00095EBEB /* Info.plist */,
+			);
+			path = NeuePreviewExtension;
+			sourceTree = "<group>";
+		};
+		B0203BB923760861008B7218 /* RootFSThumbnailExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B0203BC423760887008B7218 /* RootFSThumbnailExtension.entitlements */,
+				B0203BBA23760861008B7218 /* ThumbnailProvider.h */,
+				B0203BBB23760861008B7218 /* ThumbnailProvider.m */,
+				B0203BBD23760861008B7218 /* Info.plist */,
+			);
+			path = RootFSThumbnailExtension;
+			sourceTree = "<group>";
+		};
+		B0C102951EF7465600FC04FB = {
+			isa = PBXGroup;
+			children = (
+				B0C03A54270CEE58002107B3 /* README.md */,
+				B0C102A01EF7465600FC04FB /* RootFSProvider */,
+				B0C102BC1EF7467300FC04FB /* RootFSProviderExtension */,
+				B0E6D1AC1F07BFE5001C7099 /* RootFSProviderUIExtension */,
+				B0EEBA501F08EA460038A3B8 /* RootFSPreviewExtension */,
+				B0203BB923760861008B7218 /* RootFSThumbnailExtension */,
+				B00544C423760EF00095EBEB /* NeuePreviewExtension */,
+				B0EEBA4D1F08EA460038A3B8 /* Frameworks */,
+				B0C1029F1EF7465600FC04FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0C1029F1EF7465600FC04FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0C1029E1EF7465600FC04FB /* RootFSProvider.app */,
+				B0C102BB1EF7467300FC04FB /* RootFSProviderExtension.appex */,
+				B0E6D1AB1F07BFE5001C7099 /* RootFSProviderUIExtension.appex */,
+				B0EEBA4C1F08EA460038A3B8 /* RootFSPreviewExtension.appex */,
+				B0203BB623760861008B7218 /* RootFSThumbnailExtension.appex */,
+				B00544C223760EF00095EBEB /* NeuePreviewExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0C102A01EF7465600FC04FB /* RootFSProvider */ = {
+			isa = PBXGroup;
+			children = (
+				B0CCE9B51EF74BF8009824EA /* RootFSProvider.entitlements */,
+				B0C102A11EF7465600FC04FB /* AppDelegate.h */,
+				B0C102A21EF7465600FC04FB /* AppDelegate.m */,
+				B0C102A41EF7465600FC04FB /* ViewController.h */,
+				B0C102A51EF7465600FC04FB /* ViewController.m */,
+				B0C102A71EF7465600FC04FB /* Main.storyboard */,
+				B0C102AA1EF7465600FC04FB /* Assets.xcassets */,
+				B0C102AC1EF7465600FC04FB /* LaunchScreen.storyboard */,
+				B0C102AF1EF7465600FC04FB /* Info.plist */,
+				B0C102B01EF7465600FC04FB /* main.m */,
+			);
+			path = RootFSProvider;
+			sourceTree = "<group>";
+		};
+		B0C102BC1EF7467300FC04FB /* RootFSProviderExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B0C102BD1EF7467300FC04FB /* FileProviderExtension.h */,
+				B0C102BE1EF7467300FC04FB /* FileProviderExtension.m */,
+				B0C102C01EF7467300FC04FB /* FileProviderItem.h */,
+				B0C102C11EF7467300FC04FB /* FileProviderItem.m */,
+				B0C102C31EF7467300FC04FB /* FileProviderEnumerator.h */,
+				B0C102C41EF7467300FC04FB /* FileProviderEnumerator.m */,
+				B0C102C61EF7467300FC04FB /* Info.plist */,
+				B0C102C71EF7467300FC04FB /* RootFSProviderExtension.entitlements */,
+			);
+			path = RootFSProviderExtension;
+			sourceTree = "<group>";
+		};
+		B0E6D1AC1F07BFE5001C7099 /* RootFSProviderUIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B0E6D1AD1F07BFE5001C7099 /* FileProviderExtension.h */,
+				B0E6D1AE1F07BFE5001C7099 /* FileProviderExtension.m */,
+				B0E7CDC41F07C4A3002041C4 /* RootFSUI.storyboard */,
+				B0E6D1B61F07BFE5001C7099 /* Info.plist */,
+				B0E6D1B71F07BFE5001C7099 /* RootFSProviderUIExtension.entitlements */,
+			);
+			path = RootFSProviderUIExtension;
+			sourceTree = "<group>";
+		};
+		B0EEBA4D1F08EA460038A3B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0EEBA4E1F08EA460038A3B8 /* QuickLook.framework */,
+				B0203BB723760861008B7218 /* QuickLookThumbnailing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0EEBA501F08EA460038A3B8 /* RootFSPreviewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B0203BB123760562008B7218 /* RootFSPreviewExtension.entitlements */,
+				B0EEBA511F08EA460038A3B8 /* PreviewViewController.h */,
+				B0EEBA521F08EA460038A3B8 /* PreviewViewController.m */,
+				B0EEBA541F08EA460038A3B8 /* MainInterface.storyboard */,
+				B0EEBA571F08EA460038A3B8 /* Info.plist */,
+			);
+			path = RootFSPreviewExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B00544C123760EF00095EBEB /* NeuePreviewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00544CF23760EF00095EBEB /* Build configuration list for PBXNativeTarget "NeuePreviewExtension" */;
+			buildPhases = (
+				B00544BE23760EF00095EBEB /* Sources */,
+				B00544BF23760EF00095EBEB /* Frameworks */,
+				B00544C023760EF00095EBEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeuePreviewExtension;
+			productName = NeuePreviewExtension;
+			productReference = B00544C223760EF00095EBEB /* NeuePreviewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B0203BB523760861008B7218 /* RootFSThumbnailExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0203BC123760861008B7218 /* Build configuration list for PBXNativeTarget "RootFSThumbnailExtension" */;
+			buildPhases = (
+				B0203BB223760861008B7218 /* Sources */,
+				B0203BB323760861008B7218 /* Frameworks */,
+				B0203BB423760861008B7218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RootFSThumbnailExtension;
+			productName = RootFSThumbnailExtension;
+			productReference = B0203BB623760861008B7218 /* RootFSThumbnailExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B0C1029D1EF7465600FC04FB /* RootFSProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0C102B41EF7465600FC04FB /* Build configuration list for PBXNativeTarget "RootFSProvider" */;
+			buildPhases = (
+				B0C1029A1EF7465600FC04FB /* Sources */,
+				B0C1029B1EF7465600FC04FB /* Frameworks */,
+				B0C1029C1EF7465600FC04FB /* Resources */,
+				B0C102CE1EF7467300FC04FB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0C102C91EF7467300FC04FB /* PBXTargetDependency */,
+				B0E6D1B91F07BFE5001C7099 /* PBXTargetDependency */,
+				B0EEBA591F08EA460038A3B8 /* PBXTargetDependency */,
+				B0203BBF23760861008B7218 /* PBXTargetDependency */,
+				B00544CD23760EF00095EBEB /* PBXTargetDependency */,
+			);
+			name = RootFSProvider;
+			productName = RootFSProvider;
+			productReference = B0C1029E1EF7465600FC04FB /* RootFSProvider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0C102BA1EF7467300FC04FB /* RootFSProviderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0C102CB1EF7467300FC04FB /* Build configuration list for PBXNativeTarget "RootFSProviderExtension" */;
+			buildPhases = (
+				B0C102B71EF7467300FC04FB /* Sources */,
+				B0C102B81EF7467300FC04FB /* Frameworks */,
+				B0C102B91EF7467300FC04FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RootFSProviderExtension;
+			productName = RootFSProviderExtension;
+			productReference = B0C102BB1EF7467300FC04FB /* RootFSProviderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B0E6D1AA1F07BFE5001C7099 /* RootFSProviderUIExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0E6D1BB1F07BFE5001C7099 /* Build configuration list for PBXNativeTarget "RootFSProviderUIExtension" */;
+			buildPhases = (
+				B0E6D1A71F07BFE5001C7099 /* Sources */,
+				B0E6D1A81F07BFE5001C7099 /* Frameworks */,
+				B0E6D1A91F07BFE5001C7099 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RootFSProviderUIExtension;
+			productName = RootFSProviderUIExtension;
+			productReference = B0E6D1AB1F07BFE5001C7099 /* RootFSProviderUIExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B0EEBA4B1F08EA460038A3B8 /* RootFSPreviewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0EEBA5D1F08EA460038A3B8 /* Build configuration list for PBXNativeTarget "RootFSPreviewExtension" */;
+			buildPhases = (
+				B0EEBA481F08EA460038A3B8 /* Sources */,
+				B0EEBA491F08EA460038A3B8 /* Frameworks */,
+				B0EEBA4A1F08EA460038A3B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RootFSPreviewExtension;
+			productName = RootFSPreviewExtension;
+			productReference = B0EEBA4C1F08EA460038A3B8 /* RootFSPreviewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0C102961EF7465600FC04FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Steven Troughton-Smith";
+				TargetAttributes = {
+					B00544C123760EF00095EBEB = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					B0203BB523760861008B7218 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					B0C1029D1EF7465600FC04FB = {
+						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					B0C102BA1EF7467300FC04FB = {
+						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					B0E6D1AA1F07BFE5001C7099 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					B0EEBA4B1F08EA460038A3B8 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = B0C102991EF7465600FC04FB /* Build configuration list for PBXProject "RootFSProvider" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0C102951EF7465600FC04FB;
+			productRefGroup = B0C1029F1EF7465600FC04FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0C1029D1EF7465600FC04FB /* RootFSProvider */,
+				B0C102BA1EF7467300FC04FB /* RootFSProviderExtension */,
+				B0E6D1AA1F07BFE5001C7099 /* RootFSProviderUIExtension */,
+				B0EEBA4B1F08EA460038A3B8 /* RootFSPreviewExtension */,
+				B0203BB523760861008B7218 /* RootFSThumbnailExtension */,
+				B00544C123760EF00095EBEB /* NeuePreviewExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B00544C023760EF00095EBEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00544CA23760EF00095EBEB /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0203BB423760861008B7218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C1029C1EF7465600FC04FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C102AE1EF7465600FC04FB /* LaunchScreen.storyboard in Resources */,
+				B0C102AB1EF7465600FC04FB /* Assets.xcassets in Resources */,
+				B0C102A91EF7465600FC04FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C102B91EF7467300FC04FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E6D1A91F07BFE5001C7099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E7CDC51F07C4A3002041C4 /* RootFSUI.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0EEBA4A1F08EA460038A3B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0EEBA561F08EA460038A3B8 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B00544BE23760EF00095EBEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00544C723760EF00095EBEB /* PreviewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0203BB223760861008B7218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0203BBC23760861008B7218 /* ThumbnailProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C1029A1EF7465600FC04FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C102A61EF7465600FC04FB /* ViewController.m in Sources */,
+				B0C102B11EF7465600FC04FB /* main.m in Sources */,
+				B0C102A31EF7465600FC04FB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C102B71EF7467300FC04FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C102C51EF7467300FC04FB /* FileProviderEnumerator.m in Sources */,
+				B0C102BF1EF7467300FC04FB /* FileProviderExtension.m in Sources */,
+				B0C102C21EF7467300FC04FB /* FileProviderItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E6D1A71F07BFE5001C7099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E6D1AF1F07BFE5001C7099 /* FileProviderExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0EEBA481F08EA460038A3B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0EEBA531F08EA460038A3B8 /* PreviewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00544CD23760EF00095EBEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B00544C123760EF00095EBEB /* NeuePreviewExtension */;
+			targetProxy = B00544CC23760EF00095EBEB /* PBXContainerItemProxy */;
+		};
+		B0203BBF23760861008B7218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0203BB523760861008B7218 /* RootFSThumbnailExtension */;
+			targetProxy = B0203BBE23760861008B7218 /* PBXContainerItemProxy */;
+		};
+		B0C102C91EF7467300FC04FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = B0C102BA1EF7467300FC04FB /* RootFSProviderExtension */;
+			targetProxy = B0C102C81EF7467300FC04FB /* PBXContainerItemProxy */;
+		};
+		B0E6D1B91F07BFE5001C7099 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = B0E6D1AA1F07BFE5001C7099 /* RootFSProviderUIExtension */;
+			targetProxy = B0E6D1B81F07BFE5001C7099 /* PBXContainerItemProxy */;
+		};
+		B0EEBA591F08EA460038A3B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0EEBA4B1F08EA460038A3B8 /* RootFSPreviewExtension */;
+			targetProxy = B0EEBA581F08EA460038A3B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B00544C823760EF00095EBEB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B00544C923760EF00095EBEB /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		B0C102A71EF7465600FC04FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0C102A81EF7465600FC04FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0C102AC1EF7465600FC04FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0C102AD1EF7465600FC04FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B0EEBA541F08EA460038A3B8 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0EEBA551F08EA460038A3B8 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B00544D023760EF00095EBEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = NeuePreviewExtension/NeuePreviewExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				INFOPLIST_FILE = NeuePreviewExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.RootFSProvider.NeuePreviewExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B00544D123760EF00095EBEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = NeuePreviewExtension/NeuePreviewExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				INFOPLIST_FILE = NeuePreviewExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.RootFSProvider.NeuePreviewExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0203BC223760861008B7218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = RootFSThumbnailExtension/RootFSThumbnailExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				INFOPLIST_FILE = RootFSThumbnailExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.RootFSProvider.RootFSThumbnailExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0203BC323760861008B7218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = RootFSThumbnailExtension/RootFSThumbnailExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				INFOPLIST_FILE = RootFSThumbnailExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.RootFSProvider.RootFSThumbnailExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0C102B21EF7465600FC04FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B0C102B31EF7465600FC04FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0C102B51EF7465600FC04FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RootFSProvider/RootFSProvider.entitlements;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = RootFSProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.RootFSProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0C102B61EF7465600FC04FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RootFSProvider/RootFSProvider.entitlements;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = RootFSProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.RootFSProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0C102CC1EF7467300FC04FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RootFSProviderExtension/RootFSProviderExtension.entitlements;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				INFOPLIST_FILE = RootFSProviderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.RootFSProvider.RootFSProviderExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0C102CD1EF7467300FC04FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RootFSProviderExtension/RootFSProviderExtension.entitlements;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				INFOPLIST_FILE = RootFSProviderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.RootFSProvider.RootFSProviderExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0E6D1BC1F07BFE5001C7099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RootFSProviderUIExtension/RootFSProviderUIExtension.entitlements;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				INFOPLIST_FILE = RootFSProviderUIExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.RootFSProvider.RootFSProviderUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0E6D1BD1F07BFE5001C7099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RootFSProviderUIExtension/RootFSProviderUIExtension.entitlements;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				INFOPLIST_FILE = RootFSProviderUIExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.RootFSProvider.RootFSProviderUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0EEBA5B1F08EA460038A3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RootFSPreviewExtension/RootFSPreviewExtension.entitlements;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				INFOPLIST_FILE = RootFSPreviewExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.RootFSProvider.RootFSPreviewExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0EEBA5C1F08EA460038A3B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RootFSPreviewExtension/RootFSPreviewExtension.entitlements;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				INFOPLIST_FILE = RootFSPreviewExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.RootFSProvider.RootFSPreviewExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B00544CF23760EF00095EBEB /* Build configuration list for PBXNativeTarget "NeuePreviewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00544D023760EF00095EBEB /* Debug */,
+				B00544D123760EF00095EBEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0203BC123760861008B7218 /* Build configuration list for PBXNativeTarget "RootFSThumbnailExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0203BC223760861008B7218 /* Debug */,
+				B0203BC323760861008B7218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0C102991EF7465600FC04FB /* Build configuration list for PBXProject "RootFSProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C102B21EF7465600FC04FB /* Debug */,
+				B0C102B31EF7465600FC04FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0C102B41EF7465600FC04FB /* Build configuration list for PBXNativeTarget "RootFSProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C102B51EF7465600FC04FB /* Debug */,
+				B0C102B61EF7465600FC04FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0C102CB1EF7467300FC04FB /* Build configuration list for PBXNativeTarget "RootFSProviderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C102CC1EF7467300FC04FB /* Debug */,
+				B0C102CD1EF7467300FC04FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0E6D1BB1F07BFE5001C7099 /* Build configuration list for PBXNativeTarget "RootFSProviderUIExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E6D1BC1F07BFE5001C7099 /* Debug */,
+				B0E6D1BD1F07BFE5001C7099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0EEBA5D1F08EA460038A3B8 /* Build configuration list for PBXNativeTarget "RootFSPreviewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0EEBA5B1F08EA460038A3B8 /* Debug */,
+				B0EEBA5C1F08EA460038A3B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0C102961EF7465600FC04FB /* Project object */;
+}
